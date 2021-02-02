@@ -5,8 +5,8 @@
     <meta property="og:title" content="Personal Portfolio">
     <meta property="og:description"
         content="My Personal Portfolio">
-    <meta property="og:image" content="./assets/img/social-link.jpg">
-    <meta property="og:url" content="{{ page.url }}">
+    <meta property="og:image" content="{{ /assets/img/social-link.jpg | relative_url }}">
+    <meta property="og:url" content="{{ absolute_url }}">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
-    <link lang='sass' rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
-    <link rel='icon' href='{{ site.url }}/assets/img/favicon.ico' type='image/x-icon' />
+    <link lang='sass' rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel='icon' href="{{ '/assets/img/favicon.ico' | relative_url }}" type='image/x-icon' />
     <title>{{ site.title }}</title>
 </head>
